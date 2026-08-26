@@ -2900,3 +2900,226 @@
     }
 
 }
+
+/* =========================================================
+   ABOUT HMS — FULL RESPONSIVE FIX
+   ========================================================= */
+
+/* Large tablets / small laptops */
+@media (max-width: 1100px) {
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .about-image {
+        height: 420px;
+    }
+
+    .about-experience-card {
+        right: -15px;
+        bottom: 25px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content .section-title {
+        font-size: clamp(30px, 3.5vw, 38px);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-preview {
+        padding: 80px 0;
+    }
+
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        width: 100%;
+    }
+
+    /* IMAGE FIRST */
+    .about-image-wrapper {
+        order: 1;
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 420px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .about-content {
+        order: 2;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-content .section-title {
+        font-size: clamp(30px, 4vw, 38px);
+        line-height: 1.15;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-content .text-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-experience-card {
+        right: 20px;
+        bottom: 25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .about-preview {
+        padding: 60px 0;
+    }
+
+    .about-grid {
+        gap: 42px;
+    }
+
+    /* IMAGE */
+    .about-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 330px;
+        border-radius: 20px 55px 20px 20px;
+        object-fit: cover;
+    }
+
+    /* Remove large decorative shape from overflowing */
+    .about-image-wrapper::before {
+        left: -8px;
+        bottom: -10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 14px;
+    }
+
+    /* EXPERIENCE CARD */
+    .about-experience-card {
+        right: 10px;
+        bottom: 15px;
+        min-width: 150px;
+        max-width: 175px;
+        padding: 12px 14px;
+        border-radius: 12px;
+    }
+
+    .about-experience-card strong {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .about-experience-card span {
+        font-size: 9px;
+        line-height: 1.4;
+    }
+
+    /* CONTENT */
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .about-content .section-title {
+        margin-bottom: 18px;
+        font-size: 29px;
+        line-height: 1.18;
+        letter-spacing: -0.3px;
+    }
+
+    .about-content p {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .about-content .text-link {
+        margin-top: 8px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-preview {
+        padding: 50px 0;
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .about-image {
+        height: 280px;
+        border-radius: 18px 45px 18px 18px;
+    }
+
+    .about-experience-card {
+        right: 8px;
+        bottom: 12px;
+        min-width: 135px;
+        max-width: 155px;
+        padding: 10px 12px;
+    }
+
+    .about-experience-card strong {
+        font-size: 15px;
+    }
+
+    .about-experience-card span {
+        font-size: 8px;
+    }
+
+    .about-content .section-title {
+        font-size: 26px;
+    }
+
+    .about-content p {
+        font-size: 13.5px;
+        line-height: 1.7;
+    }
+}
