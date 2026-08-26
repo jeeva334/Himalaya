@@ -3012,16 +3012,17 @@
     /* IMAGE */
    
 .about-image-wrapper {
+    padding:8px;
     padding: 12px;
     border: 1px solid #D8E5F2;
-    border-radius: 30px;
+    border-radius: 24px;
     background: #FFFFFF;
 }
 
 .about-content {
-    padding: 35px 40px;
+     padding: 25px 22px;
     border: 1px solid #D8E5F2;
-    border-radius: 24px;
+    border-radius: 20px;
     background: #FFFFFF;
     box-shadow: 0 12px 35px rgba(18, 59, 112, 0.06);
 }
