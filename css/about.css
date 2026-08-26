@@ -1,0 +1,4597 @@
+/* =========================================================
+   HIMALAYA MEDICAL SERVICES
+   ABOUT PAGE CSS
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT HERO — FINAL TYPOGRAPHY & STYLING
+   ========================================================= */
+
+.about-hero-section {
+    position: relative;
+    overflow: hidden;
+
+    padding: 88px 0 92px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7FAFD 0%,
+            #EEF6FF 100%
+        );
+}
+
+
+/* ---------------------------------------------------------
+   HERO CONTAINER
+--------------------------------------------------------- */
+
+.about-hero-container {
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        0.95fr;
+
+    align-items: center;
+
+    gap: 65px;
+}
+
+
+/* ---------------------------------------------------------
+   HERO CONTENT
+--------------------------------------------------------- */
+
+.about-hero-content {
+    max-width: 680px;
+}
+
+
+/* ---------------------------------------------------------
+   SMALL LABEL
+--------------------------------------------------------- */
+
+.about-hero-content .section-label {
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    color: #1769C2;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN HEADING
+--------------------------------------------------------- */
+
+.about-hero-content h1 {
+    margin: 0 0 22px;
+
+    color: #123B70;
+
+    font-size: clamp(
+        42px,
+        4.5vw,
+        50px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.06;
+
+    letter-spacing: -1.8px;
+}
+
+
+/* BLUE HEADING PART */
+
+.about-hero-content h1 span {
+    display: block;
+
+    color: #2F80ED;
+}
+
+
+/* ---------------------------------------------------------
+   LIFECYCLE SUBHEADING
+--------------------------------------------------------- */
+
+.about-hero-subheading {
+    max-width: 680px;
+
+    margin: 0 0 24px;
+
+    color: #123B70;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+
+    letter-spacing: -0.2px;
+}
+
+
+/* ---------------------------------------------------------
+   DESCRIPTION
+--------------------------------------------------------- */
+
+.about-hero-content > p {
+    max-width: 680px;
+
+    margin: 0 0 17px;
+
+    color: #58708E;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   TRUST HIGHLIGHTS
+--------------------------------------------------------- */
+
+.about-hero-highlights {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    color: #123B70;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+
+/* BULLET SEPARATOR */
+
+.about-hero-highlights span:nth-child(even) {
+    color: #2F80ED;
+
+    font-weight: 800;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTON
+--------------------------------------------------------- */
+
+.about-hero-actions {
+    display: flex;
+
+    align-items: center;
+
+    margin-top: 28px;
+}
+
+
+.about-hero-actions .btn {
+    min-width: 190px;
+
+    min-height: 52px;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+/* =========================================================
+   2. ABOUT HERO VISUAL
+   ========================================================= */
+
+.about-hero-visual {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.about-hero-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -25px;
+
+    right: -20px;
+
+    width: 150px;
+
+    height: 150px;
+
+    border: 25px solid rgba(47, 128, 237, 0.08);
+
+    border-radius: 50%;
+
+}
+
+
+.about-hero-visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -25px;
+
+    left: -20px;
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+    background: rgba(50, 196, 141, 0.10);
+
+}
+
+
+.about-hero-visual img {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    max-width: 560px;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius:
+        24px
+        80px
+        24px
+        24px;
+
+    box-shadow:
+        0 25px 55px rgba(18, 59, 112, 0.15);
+
+}
+
+
+/* =========================================================
+   3. ABOUT MAIN SECTION
+   ========================================================= */
+
+.about-main-section {
+
+    background: #FFFFFF;
+
+}
+
+
+.about-main-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        0.95fr
+        1.05fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+/* =========================================================
+   4. ABOUT MAIN IMAGE
+   ========================================================= */
+
+.about-main-image {
+
+    position: relative;
+
+}
+
+
+.about-main-image > img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius:
+        24px
+        24px
+        90px
+        24px;
+
+    box-shadow:
+        0 20px 50px rgba(18, 59, 112, 0.12);
+
+}
+
+
+.about-main-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: 0;
+
+    left: -20px;
+
+    bottom: -20px;
+
+    width: 170px;
+
+    height: 170px;
+
+    border: 2px solid #D8E5F2;
+
+    border-radius: 20px;
+
+}
+
+
+.about-main-image > img {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* =========================================================
+   5. YEAR CARD
+   ========================================================= */
+
+.about-year-card {
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: 35px;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 155px;
+
+    padding: 18px 20px;
+
+    background: #123B70;
+
+    border-radius: 14px;
+
+    color: #FFFFFF;
+
+    box-shadow:
+        0 15px 35px rgba(18, 59, 112, 0.22);
+
+}
+
+
+.about-year-card strong {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+}
+
+
+.about-year-card span {
+
+    margin-top: 5px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   6. ABOUT MAIN CONTENT
+   ========================================================= */
+
+.about-main-content {
+
+    max-width: 650px;
+
+}
+
+
+.about-main-content .section-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-main-content > p {
+
+    margin-bottom: 18px;
+
+    color: #5B6B82;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+}
+
+
+.about-main-content strong {
+
+    color: #1769C2;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   7. ABOUT ACTIONS
+   ========================================================= */
+
+.about-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 28px;
+
+}
+
+
+.about-actions .btn {
+
+    min-width: 170px;
+
+}
+
+
+/* =========================================================
+   8. ABOUT STATS SECTION
+   ========================================================= */
+
+.about-stats-section {
+
+    background: #123B70;
+
+}
+
+
+.about-stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+}
+
+
+.about-stat {
+
+    min-height: 175px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.12);
+
+}
+
+
+.about-stat:last-child {
+
+    border-right: none;
+
+}
+
+
+.about-stat strong {
+
+    margin-bottom: 8px;
+
+    color: #FFFFFF;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+}
+
+
+.about-stat span {
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+/* =========================================================
+   9. WHO WE ARE — INTERACTIVE SECTION
+   ========================================================= */
+
+.who-we-are-section {
+    position: relative;
+
+    padding: 100px 0;
+
+    background: #F7FAFD;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN LAYOUT
+--------------------------------------------------------- */
+.who-we-are-container {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    align-items: center;
+
+    gap: 0;
+
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   LEFT CONTENT
+--------------------------------------------------------- */
+
+.who-we-are-content {
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 650px;
+
+    padding: 42px 45px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 18px 45px rgba(18, 59, 112, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   SECTION LABEL
+--------------------------------------------------------- */
+
+.who-we-are-content .section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #1769C2;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN HEADING
+--------------------------------------------------------- */
+
+.who-we-are-title {
+    margin: 0 0 30px;
+
+    color: #123B70;
+
+    font-size: clamp(
+        38px,
+        4vw,
+        50px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.3px;
+}
+
+
+.who-we-are-title span {
+    display: block;
+
+    color: #2F80ED;
+}
+
+
+/* =========================================================
+   ACCORDION
+   ========================================================= */
+
+.who-we-are-accordion {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   ACCORDION ITEM
+--------------------------------------------------------- */
+
+.who-accordion-item {
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E0E9F3;
+
+    border-radius: 12px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.who-accordion-item.active {
+    border-color: #6EA9EF;
+
+    background: #F9FCFF;
+
+    box-shadow:
+        0 6px 20px rgba(47, 128, 237, 0.07);
+}
+
+
+/* ---------------------------------------------------------
+   ACCORDION HEADER
+--------------------------------------------------------- */
+
+.who-accordion-header {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        48px
+        1fr
+        30px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 13px 16px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #123B70;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER
+--------------------------------------------------------- */
+
+.who-accordion-number {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #1769C2;
+
+    color: #FFFFFF;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+--------------------------------------------------------- */
+
+.who-accordion-title {
+    color: #123B70;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   PLUS / MINUS
+--------------------------------------------------------- */
+
+.who-accordion-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #2F80ED;
+
+    font-size: 23px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   ACCORDION CONTENT
+--------------------------------------------------------- */
+
+.who-accordion-content {
+    display: grid;
+
+    grid-template-rows: 0fr;
+
+    transition:
+        grid-template-rows 0.35s ease;
+}
+
+
+.who-accordion-content p {
+    overflow: hidden;
+
+    margin: 0;
+
+    padding:
+        0
+        20px
+        0
+        78px;
+
+    color: #5B6B82;
+
+    font-size: 13.5px;
+
+    line-height: 1.75;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.25s ease,
+        padding 0.35s ease;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIVE CONTENT
+--------------------------------------------------------- */
+
+.who-accordion-item.active
+.who-accordion-content {
+    grid-template-rows: 1fr;
+}
+
+
+.who-accordion-item.active
+.who-accordion-content p {
+    padding-bottom: 20px;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.who-we-are-actions {
+    display: flex;
+
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+
+.who-we-are-actions .btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 190px;
+
+    min-height: 50px;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.who-we-are-actions .btn-arrow {
+    font-size: 18px;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.who-we-are-actions .btn:hover
+.btn-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.who-we-are-visual {
+    position: relative;
+
+    z-index: 1;
+
+    min-height: 610px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    margin-left: -80px;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE WRAPPER
+--------------------------------------------------------- */
+
+.who-we-are-image-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    height: 860px;
+
+    overflow: hidden;
+
+    border-radius:
+        24px
+        70px
+        24px
+        24px;
+
+    box-shadow:
+        0 25px 55px rgba(18, 59, 112, 0.16);
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE
+--------------------------------------------------------- */
+
+.who-we-are-image {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.who-we-are-image-wrapper:hover
+.who-we-are-image {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   DECORATIVE ELEMENTS
+   ========================================================= */
+
+.who-decoration {
+    position: absolute;
+
+    z-index: 0;
+
+    border-radius: 16px;
+}
+
+
+/* TOP RIGHT BLUE SHAPE */
+
+.who-decoration-top {
+    top: 35px;
+
+    right: -25px;
+
+    width: 100px;
+
+    height: 150px;
+
+    background: #2F80ED;
+
+    opacity: 0.9;
+}
+
+
+/* BOTTOM BLUE SHAPE */
+.who-decoration-bottom {
+    bottom: 20px;
+    left: -25px;
+    width: 130px;
+    height: 70px;
+    background: #1769C2;
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------------------
+   DOT PATTERN
+--------------------------------------------------------- */
+
+.who-dots {
+    position: absolute;
+
+    right: -45px;
+
+    bottom: -35px;
+
+    width: 150px;
+
+    height: 150px;
+
+    z-index: 0;
+
+    background-image:
+        radial-gradient(
+            #B9D6F5 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 14px 14px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   11. MISSION, VISION & COMMITMENT
+   ========================================================= */
+
+.mission-vision-section {
+    position: relative;
+
+    padding: 105px 0 110px;
+
+    background: #FFFFFF;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.mission-vision-container {
+    position: relative;
+
+    max-width: 1240px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.mission-vision-header {
+    text-align: center;
+
+    max-width: 1150px;
+
+    margin: 0 auto 55px;
+}
+
+
+.mission-vision-header .section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #1769C2;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.mission-vision-title {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: clamp(
+        40px,
+        4.5vw,
+        58px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   THREE CARD GRID
+   ========================================================= */
+
+.mission-vision-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.mission-vision-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 590px;
+
+    padding: 40px 30px 42px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(
+            18,
+            59,
+            112,
+            0.06
+        );
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.mission-vision-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #AFCDF0;
+
+    box-shadow:
+        0 20px 45px rgba(
+            18,
+            59,
+            112,
+            0.12
+        );
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.mission-card-top {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.mission-vision-icon {
+    width: 88px;
+
+    height: 88px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #EAF3FD;
+
+    color: #1769C2;
+
+    font-size: 40px;
+
+    font-weight: 400;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.mission-vision-card:hover
+.mission-vision-icon {
+    background: #DDECFB;
+
+    transform: translateY(-3px);
+}
+
+
+.mission-vision-icon span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.mission-vision-number {
+    color: #2F80ED;
+
+    font-size: 43px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.mission-vision-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin: 28px 0 34px;
+
+    background: #C9DDF2;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.mission-vision-card-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.mission-vision-card-content h3 {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* =========================================================
+   CARD ACCENT
+   ========================================================= */
+
+.card-accent {
+    display: block;
+
+    width: 66px;
+
+    height: 3px;
+
+    margin: 23px auto 27px;
+
+    border-radius: 10px;
+
+    background: #2F80ED;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.mission-vision-card-content p {
+    max-width: 320px;
+
+    margin: 0;
+
+    color: #53677F;
+
+    font-size: 15.5px;
+
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+   ========================================================= */
+
+.mission-vision-section::before {
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+
+    left: -90px;
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 50%;
+
+    background: #EEF6FE;
+
+    pointer-events: none;
+}
+
+
+.mission-vision-section::after {
+    content: "";
+
+    position: absolute;
+
+    right: -30px;
+
+    bottom: -80px;
+
+    width: 250px;
+
+    height: 250px;
+
+    background-image:
+        radial-gradient(
+            #C4DCF4 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 14px 14px;
+
+    opacity: 0.65;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .mission-vision-section {
+        padding: 85px 0 90px;
+    }
+
+
+    .mission-vision-container {
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .mission-vision-header {
+        margin-bottom: 45px;
+    }
+
+
+    .mission-vision-title {
+        font-size: 46px;
+    }
+
+
+    .mission-vision-grid {
+        gap: 18px;
+    }
+
+
+    .mission-vision-card {
+        min-height: 560px;
+
+        padding:
+            35px
+            22px
+            38px;
+    }
+
+
+    .mission-vision-icon {
+        width: 76px;
+
+        height: 76px;
+
+        font-size: 34px;
+    }
+
+
+    .mission-vision-number {
+        font-size: 38px;
+    }
+
+
+    .mission-vision-card-content h3 {
+        font-size: 20px;
+    }
+
+
+    .mission-vision-card-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mission-vision-section {
+        padding: 70px 0 70px;
+    }
+
+
+    .mission-vision-container {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .mission-vision-header {
+        margin-bottom: 35px;
+    }
+
+
+    .mission-vision-header .section-label {
+        margin-bottom: 16px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.6px;
+    }
+
+
+    .mission-vision-title {
+        font-size: 34px;
+
+        line-height: 1.1;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .mission-vision-card {
+        min-height: auto;
+
+        padding:
+            35px
+            25px
+            38px;
+    }
+
+
+    .mission-vision-icon {
+        width: 72px;
+
+        height: 72px;
+
+        font-size: 32px;
+    }
+
+
+    .mission-vision-number {
+        font-size: 36px;
+    }
+
+
+    .mission-vision-divider {
+        margin:
+            24px 0
+            28px;
+    }
+
+
+    .mission-vision-card-content h3 {
+        font-size: 21px;
+    }
+
+
+    .card-accent {
+        margin:
+            20px auto
+            24px;
+    }
+
+
+    .mission-vision-card-content p {
+        max-width: 100%;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .mission-vision-card:hover {
+        transform: none;
+    }
+
+
+    .mission-vision-section::before {
+        width: 160px;
+
+        height: 160px;
+
+        top: -60px;
+
+        left: -70px;
+    }
+
+
+    .mission-vision-section::after {
+        width: 150px;
+
+        height: 150px;
+
+        right: -60px;
+
+        bottom: -50px;
+
+        background-size: 11px 11px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .mission-vision-section {
+        padding: 55px 0 60px;
+    }
+
+
+    .mission-vision-container {
+        padding-left: 16px;
+
+        padding-right: 16px;
+    }
+
+
+    .mission-vision-title {
+        font-size: 29px;
+    }
+
+
+    .mission-vision-card {
+        padding:
+            30px
+            20px
+            32px;
+    }
+
+
+    .mission-vision-icon {
+        width: 64px;
+
+        height: 64px;
+
+        font-size: 28px;
+    }
+
+
+    .mission-vision-number {
+        font-size: 33px;
+    }
+
+
+    .mission-vision-card-content h3 {
+        font-size: 19px;
+    }
+
+
+    .mission-vision-card-content p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   12. WHAT MAKES HMS DIFFERENT
+   ========================================================= */
+
+.hms-different-section {
+    position: relative;
+
+    padding: 105px 0 100px;
+
+    background: #F7FAFD;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.hms-different-container {
+    position: relative;
+
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.hms-different-header {
+    max-width: 1000px;
+
+    margin-bottom: 42px;
+}
+
+
+.hms-different-header .section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #1769C2;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.hms-different-title {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: clamp(
+        42px,
+        5vw,
+        62px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.04;
+
+    letter-spacing: -1.8px;
+}
+
+
+.hms-different-title span {
+    display: block;
+
+    color: #2F80ED;
+}
+
+
+.hms-different-intro {
+    max-width: 720px;
+
+    margin: 22px 0 0;
+
+    color: #5B6B82;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SUPPORT POINTS GRID
+   ========================================================= */
+
+.hms-different-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px 20px;
+}
+
+
+/* =========================================================
+   SUPPORT CARD
+   ========================================================= */
+
+.hms-different-card {
+    min-height: 78px;
+
+    display: grid;
+
+    grid-template-columns:
+        64px
+        1px
+        1fr;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 8px 22px 8px 10px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(
+            18,
+            59,
+            112,
+            0.045
+        );
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.hms-different-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #AFCDF0;
+
+    box-shadow:
+        0 10px 25px rgba(
+            18,
+            59,
+            112,
+            0.09
+        );
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.hms-different-icon {
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #EAF3FD;
+
+    color: #1769C2;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.hms-different-card:hover
+.hms-different-icon {
+    background: #DDECFB;
+
+    transform: scale(1.04);
+}
+
+
+.hms-different-icon span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   VERTICAL CARD LINE
+   ========================================================= */
+
+.hms-different-card-line {
+    width: 1px;
+
+    height: 34px;
+
+    background: #C8DDF2;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.hms-different-card p {
+    margin: 0;
+
+    color: #172B4D;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   PARTNER STATEMENT
+   ========================================================= */
+
+.hms-partner-statement {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        150px
+        1px
+        1fr;
+
+    align-items: center;
+
+    gap: 38px;
+
+    margin-top: 45px;
+
+    padding: 38px 42px;
+
+    border-top: 2px solid #2F80ED;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   PARTNER ICON
+   ========================================================= */
+
+.hms-partner-icon {
+    width: 110px;
+
+    height: 110px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid #2F80ED;
+
+    border-radius: 50%;
+
+    background: #EEF6FE;
+
+    color: #1769C2;
+
+    font-size: 46px;
+}
+
+
+.hms-partner-icon span {
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PARTNER VERTICAL DIVIDER
+   ========================================================= */
+
+.hms-partner-divider {
+    width: 1px;
+
+    height: 100px;
+
+    background: #BFD6EE;
+}
+
+
+/* =========================================================
+   PARTNER CONTENT
+   ========================================================= */
+
+.hms-partner-content h3 {
+    margin: 0 0 12px;
+
+    color: #123B70;
+
+    font-size: clamp(
+        21px,
+        2vw,
+        28px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+.hms-partner-content h4 {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: clamp(
+        28px,
+        3vw,
+        42px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.8px;
+}
+
+
+.hms-partner-content h4 span {
+    color: #2F80ED;
+}
+
+
+/* =========================================================
+   BOTTOM ACCENT
+   ========================================================= */
+
+.hms-partner-line {
+    width: 70px;
+
+    height: 3px;
+
+    margin-top: 22px;
+
+    border-radius: 10px;
+
+    background: #2F80ED;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATIONS
+   ========================================================= */
+
+.hms-different-section::before {
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+
+    right: -80px;
+
+    width: 260px;
+
+    height: 260px;
+
+    border: 25px solid #EAF3FD;
+
+    border-radius: 50%;
+
+    opacity: 0.75;
+
+    pointer-events: none;
+}
+
+
+.hms-different-section::after {
+    content: "";
+
+    position: absolute;
+
+    top: 120px;
+
+    right: 25px;
+
+    width: 150px;
+
+    height: 210px;
+
+    background-image:
+        radial-gradient(
+            #BFD9F3 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 14px 14px;
+
+    opacity: 0.55;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .hms-different-section {
+        padding: 85px 0 85px;
+    }
+
+
+    .hms-different-container {
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .hms-different-title {
+        font-size: 48px;
+    }
+
+
+    .hms-different-intro {
+        font-size: 16px;
+    }
+
+
+    .hms-different-grid {
+        gap: 12px;
+    }
+
+
+    .hms-different-card {
+        grid-template-columns:
+            58px
+            1px
+            1fr;
+
+        gap: 14px;
+
+        min-height: 74px;
+
+        padding-right: 16px;
+    }
+
+
+    .hms-different-icon {
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 22px;
+    }
+
+
+    .hms-different-card p {
+        font-size: 14px;
+    }
+
+
+    .hms-partner-statement {
+        grid-template-columns:
+            120px
+            1px
+            1fr;
+
+        gap: 28px;
+
+        padding: 32px 25px;
+    }
+
+
+    .hms-partner-icon {
+        width: 90px;
+
+        height: 90px;
+
+        font-size: 38px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .hms-different-section {
+        padding: 70px 0 70px;
+    }
+
+
+    .hms-different-container {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .hms-different-header {
+        margin-bottom: 32px;
+    }
+
+
+    .hms-different-header .section-label {
+        margin-bottom: 16px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.6px;
+    }
+
+
+    .hms-different-title {
+        font-size: 35px;
+
+        line-height: 1.08;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .hms-different-intro {
+        margin-top: 18px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ONE COLUMN */
+
+    .hms-different-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .hms-different-card {
+        grid-template-columns:
+            54px
+            1px
+            1fr;
+
+        min-height: 70px;
+
+        gap: 14px;
+
+        padding:
+            7px
+            14px
+            7px
+            8px;
+
+        border-radius: 10px;
+    }
+
+
+    .hms-different-icon {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 20px;
+    }
+
+
+    .hms-different-card-line {
+        height: 30px;
+    }
+
+
+    .hms-different-card p {
+        font-size: 13.5px;
+
+        line-height: 1.4;
+    }
+
+
+    /* PARTNER STATEMENT */
+
+    .hms-partner-statement {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        margin-top: 38px;
+
+        padding:
+            30px
+            0
+            0;
+
+        border-top-width: 2px;
+
+        text-align: center;
+    }
+
+
+    .hms-partner-icon {
+        width: 78px;
+
+        height: 78px;
+
+        margin: 0 auto;
+
+        font-size: 32px;
+    }
+
+
+    .hms-partner-divider {
+        display: none;
+    }
+
+
+    .hms-partner-content h3 {
+        font-size: 20px;
+
+        line-height: 1.25;
+    }
+
+
+    .hms-partner-content h4 {
+        font-size: 28px;
+
+        line-height: 1.12;
+    }
+
+
+    .hms-partner-line {
+        margin:
+            20px
+            auto
+            0;
+    }
+
+
+    .hms-different-section::before {
+        width: 160px;
+
+        height: 160px;
+
+        border-width: 18px;
+
+        top: -65px;
+
+        right: -60px;
+    }
+
+
+    .hms-different-section::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .hms-different-section {
+        padding: 55px 0 60px;
+    }
+
+
+    .hms-different-container {
+        padding-left: 16px;
+
+        padding-right: 16px;
+    }
+
+
+    .hms-different-title {
+        font-size: 30px;
+    }
+
+
+    .hms-different-card {
+        grid-template-columns:
+            48px
+            1px
+            1fr;
+
+        gap: 11px;
+    }
+
+
+    .hms-different-icon {
+        width: 43px;
+
+        height: 43px;
+
+        font-size: 18px;
+    }
+
+
+    .hms-different-card p {
+        font-size: 12.5px;
+    }
+
+
+    .hms-partner-content h3 {
+        font-size: 18px;
+    }
+
+
+    .hms-partner-content h4 {
+        font-size: 25px;
+    }
+}
+
+/* =========================================================
+   13. WHO WE SUPPORT
+   ========================================================= */
+
+.who-support-section {
+    position: relative;
+
+    padding: 105px 0 100px;
+
+    background: #F4F8FC;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.who-support-container {
+    position: relative;
+
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.who-support-header {
+    max-width: 1050px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.who-support-header .section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #1769C2;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.who-support-title {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: clamp(
+        40px,
+        4.5vw,
+        58px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+
+.who-support-title span {
+    display: block;
+
+    color: #2F80ED;
+}
+
+
+.who-support-intro {
+    max-width: 720px;
+
+    margin: 22px auto 0;
+
+    color: #53677F;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SUPPORT CARD GRID
+   ========================================================= */
+
+.who-support-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px 24px;
+}
+
+
+/* =========================================================
+   SUPPORT CARD
+   ========================================================= */
+
+.who-support-card {
+    min-height: 98px;
+
+    display: grid;
+
+    grid-template-columns:
+        74px
+        1px
+        1fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        10px
+        28px
+        10px
+        12px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px
+        rgba(18, 59, 112, 0.045);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.who-support-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #AFCDF0;
+
+    box-shadow:
+        0 10px 25px
+        rgba(18, 59, 112, 0.09);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.who-support-icon {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #EAF3FD;
+
+    color: #1769C2;
+
+    font-size: 27px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   ICON HOVER
+   ========================================================= */
+
+.who-support-card:hover .who-support-icon {
+    background: #DDECFB;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   VERTICAL DIVIDER
+   ========================================================= */
+
+.who-support-divider {
+    width: 1px;
+
+    height: 42px;
+
+    background: #C8DDF2;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.who-support-card h3 {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+   ========================================================= */
+
+.who-support-section::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+
+    left: -90px;
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 50%;
+
+    background: #E8F3FD;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+.who-support-section::after {
+    content: "";
+
+    position: absolute;
+
+    right: -20px;
+
+    bottom: 40px;
+
+    width: 180px;
+
+    height: 220px;
+
+    background-image:
+        radial-gradient(
+            #BFD9F3 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 14px 14px;
+
+    opacity: 0.55;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .who-support-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    .who-support-image {
+        height: 175px;
+    }
+
+
+    .who-support-card-content {
+        grid-template-columns:
+            54px
+            1fr
+            22px;
+
+        gap: 12px;
+    }
+
+
+    .who-support-icon {
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .who-support-section {
+        padding: 85px 0 85px;
+    }
+
+
+    .who-support-container {
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .who-support-header {
+        margin-bottom: 45px;
+    }
+
+
+    .who-support-title {
+        font-size: 46px;
+    }
+
+
+    .who-support-intro {
+        font-size: 16px;
+    }
+
+
+    .who-support-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+
+    .who-support-image {
+        height: 190px;
+    }
+
+
+    .who-support-card-content h3 {
+        font-size: 15px;
+    }
+
+
+    .who-support-description p {
+        font-size: 13.5px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .who-support-section {
+        padding: 70px 0 70px;
+    }
+
+
+    .who-support-container {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .who-support-header {
+        margin-bottom: 32px;
+    }
+
+
+    .who-support-header .section-label {
+        margin-bottom: 16px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.6px;
+    }
+
+
+    .who-support-title {
+        font-size: 34px;
+
+        line-height: 1.1;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .who-support-intro {
+        margin-top: 17px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .who-support-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .who-support-image {
+        height: 205px;
+    }
+
+
+    .who-support-card-content {
+        grid-template-columns:
+            54px
+            1fr
+            22px;
+
+        min-height: 76px;
+
+        gap: 13px;
+
+        padding:
+            10px
+            14px
+            10px
+            10px;
+    }
+
+
+    .who-support-icon {
+        width: 54px;
+
+        height: 54px;
+
+        margin-top: -30px;
+
+        font-size: 23px;
+    }
+
+
+    .who-support-card-content h3 {
+        font-size: 15px;
+
+        line-height: 1.35;
+    }
+
+
+    .who-support-arrow {
+        font-size: 21px;
+    }
+
+
+    .who-support-card.is-active
+    .who-support-description p {
+        padding:
+            16px
+            17px
+            20px;
+    }
+
+
+    .who-support-description p {
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+
+    /* OTHER ORGANIZATIONS */
+
+    .who-support-other {
+        grid-template-columns:
+            52px
+            1fr
+            20px;
+
+        gap: 13px;
+
+        margin-top: 20px;
+
+        padding:
+            16px
+            14px;
+    }
+
+
+    .who-support-other-icon {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+
+    .who-support-other p {
+        font-size: 13px;
+
+        line-height: 1.45;
+    }
+
+
+    .who-support-other-arrow {
+        font-size: 20px;
+    }
+
+
+    .who-support-section::before {
+        width: 160px;
+
+        height: 160px;
+
+        top: -55px;
+
+        left: -65px;
+    }
+
+
+    .who-support-section::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .who-support-section {
+        padding: 55px 0 60px;
+    }
+
+
+    .who-support-container {
+        padding-left: 16px;
+
+        padding-right: 16px;
+    }
+
+
+    .who-support-title {
+        font-size: 29px;
+    }
+
+
+    .who-support-image {
+        height: 180px;
+    }
+
+
+    .who-support-card-content h3 {
+        font-size: 14px;
+    }
+
+
+    .who-support-description p {
+        font-size: 12.5px;
+    }
+
+
+    .who-support-other p {
+        font-size: 12px;
+    }
+}
+/* =========================================================
+   9. OUR APPROACH SECTION
+   ========================================================= */
+
+.about-approach-section {
+
+    background: #F7FAFD;
+
+}
+
+
+.approach-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.approach-card {
+
+    padding: 30px 25px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(18, 59, 112, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.approach-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(47, 128, 237, 0.30);
+
+    box-shadow:
+        0 18px 35px rgba(18, 59, 112, 0.09);
+
+}
+
+
+/* =========================================================
+   10. APPROACH ICON
+   ========================================================= */
+
+.approach-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background: #EAF3FF;
+
+    color: #2F80ED;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+}
+
+
+.approach-card h3 {
+
+    margin-bottom: 10px;
+
+    color: #123B70;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+
+.approach-card p {
+
+    color: #5B6B82;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   11. COVERAGE SECTION
+   ========================================================= */
+
+.coverage-section {
+
+    padding: 100px 0;
+
+    background: #FFFFFF;
+
+}
+
+
+.coverage-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+.coverage-content {
+
+    max-width: 620px;
+
+}
+
+
+.coverage-content h2 {
+
+    margin-bottom: 20px;
+
+    color: #123B70;
+
+    font-size: clamp(
+        32px,
+        4vw,
+        48px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+}
+
+
+.coverage-content h2 span {
+
+    display: block;
+
+    color: #2F80ED;
+
+}
+
+
+.coverage-content > p {
+
+    margin-bottom: 28px;
+
+    color: #5B6B82;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+}
+
+
+/* =========================================================
+   12. COVERAGE POINTS
+   ========================================================= */
+
+.coverage-points {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+.coverage-point {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.coverage-point > span {
+
+    width: 26px;
+
+    height: 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(50, 196, 141, 0.12);
+
+    color: #32C48D;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+.coverage-point p {
+
+    color: #172B4D;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   13. COVERAGE VISUAL
+   ========================================================= */
+
+.coverage-visual {
+
+    position: relative;
+
+    min-height: 380px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #EEF6FF,
+            #F7FAFD
+        );
+
+    border: 1px solid #D8E5F2;
+
+}
+
+
+.coverage-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border: 35px solid rgba(47, 128, 237, 0.08);
+
+    border-radius: 50%;
+
+}
+
+
+.coverage-visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(50, 196, 141, 0.08);
+
+}
+
+
+/* =========================================================
+   14. INDIA CARD
+   ========================================================= */
+
+.india-card {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #FFFFFF;
+
+    border: 2px solid #D8E5F2;
+
+    box-shadow:
+        0 20px 45px rgba(18, 59, 112, 0.10);
+
+    text-align: center;
+
+}
+
+
+.india-symbol {
+
+    color: #1769C2;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.india-caption {
+
+    max-width: 150px;
+
+    margin-top: 8px;
+
+    color: #5B6B82;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   15. CTA SECTION
+   ========================================================= */
+
+.about-cta-section {
+
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123B70 0%,
+            #1769C2 100%
+        );
+
+}
+
+
+.about-cta-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+.about-cta-content .section-label {
+
+    color: #A9D1FF;
+
+}
+
+
+.about-cta-content h2 {
+
+    margin-bottom: 18px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(
+        32px,
+        4vw,
+        50px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+}
+
+
+.about-cta-content h2 span {
+
+    color: #8FC4FF;
+
+}
+
+
+.about-cta-content > p {
+
+    max-width: 680px;
+
+    margin: 0 auto 30px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+.about-cta-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+}
+
+
+/* =========================================================
+   16. OUTLINE WHITE BUTTON
+   ========================================================= */
+
+.btn-outline-white {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.40);
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.btn-outline-white:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border-color: #FFFFFF;
+
+}
+
+
+/* =========================================================
+   17. TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .about-hero-container {
+
+        gap: 45px;
+
+    }
+
+
+    .about-main-grid {
+
+        gap: 50px;
+
+    }
+
+
+    .coverage-container {
+
+        gap: 45px;
+
+    }
+
+
+    .approach-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   18. TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-hero-section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .about-hero-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-hero-content {
+
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+
+    .about-hero-content h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .about-location {
+
+        margin-inline: auto;
+
+        text-align: left;
+
+    }
+
+
+    .about-hero-visual {
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+        width: 100%;
+
+    }
+
+
+    .about-main-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-main-image {
+
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+
+    .about-main-content {
+
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+
+    .about-actions {
+
+        justify-content: center;
+
+    }
+
+
+    .about-stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .about-stat:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .about-stat:nth-child(1),
+    .about-stat:nth-child(2) {
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.12);
+
+    }
+
+
+    .coverage-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .coverage-content {
+
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+
+    .coverage-content h2 span {
+
+        display: inline;
+
+    }
+
+
+    .coverage-points {
+
+        align-items: center;
+
+    }
+
+
+    .coverage-visual {
+
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   19. MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .about-hero-section {
+
+        padding: 55px 0 65px;
+
+    }
+
+
+    .about-hero-content h1 {
+
+        font-size: 38px;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .about-hero-content > p {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-location {
+
+        padding: 13px;
+
+        font-size: 12px;
+
+    }
+
+
+    .about-hero-visual img {
+
+        height: 330px;
+
+        border-radius:
+            20px
+            60px
+            20px
+            20px;
+
+    }
+
+
+    .about-main-image > img {
+
+        height: 360px;
+
+        border-radius:
+            20px
+            20px
+            65px
+            20px;
+
+    }
+
+
+    .about-year-card {
+
+        right: 12px;
+
+        bottom: 20px;
+
+        min-width: 130px;
+
+        padding: 14px 16px;
+
+    }
+
+
+    .about-year-card strong {
+
+        font-size: 24px;
+
+    }
+
+
+    .about-year-card span {
+
+        font-size: 9px;
+
+    }
+
+
+    .about-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .about-actions .btn {
+
+        width: 100%;
+
+    }
+
+
+    .about-stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .about-stat {
+
+        min-height: 140px;
+
+        padding: 20px 10px;
+
+    }
+
+
+    .about-stat strong {
+
+        font-size: 27px;
+
+    }
+
+
+    .about-stat span {
+
+        font-size: 9px;
+
+    }
+
+
+    .approach-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .approach-card {
+
+        padding: 25px 22px;
+
+    }
+
+
+    .coverage-section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .coverage-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .coverage-visual {
+
+        min-height: 320px;
+
+    }
+
+
+    .india-card {
+
+        width: 210px;
+
+        height: 210px;
+
+    }
+
+
+    .india-symbol {
+
+        font-size: 30px;
+
+    }
+
+
+    .about-cta-section {
+
+        padding: 65px 0;
+
+    }
+
+
+    .about-cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .about-cta-actions {
+
+        flex-direction: column;
+
+    }
+
+
+    .about-cta-actions .btn,
+    .about-cta-actions .btn-outline-white {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   20. EXTRA SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-hero-content h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .about-hero-visual img {
+
+        height: 290px;
+
+    }
+
+
+    .about-main-image > img {
+
+        height: 320px;
+
+    }
+
+
+    .about-stat strong {
+
+        font-size: 24px;
+
+    }
+
+
+    .india-card {
+
+        width: 185px;
+
+        height: 185px;
+
+    }
+
+}
+
+
+/* =========================================================
+   10. OUR PURPOSE SECTION
+   ========================================================= */
+
+.our-purpose-section {
+    position: relative;
+
+    padding: 105px 0 100px;
+
+    background: #F7FAFD;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.our-purpose-container {
+    position: relative;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.our-purpose-header {
+    text-align: center;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+   ========================================================= */
+
+.our-purpose-header .section-label {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: #1769C2;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN PURPOSE HEADING
+   ========================================================= */
+
+.purpose-heading {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.purpose-heading h2 {
+    margin: 0;
+
+    color: #123B70;
+
+    font-size: clamp(
+        42px,
+        5vw,
+        64px
+    );
+
+    font-weight: 800;
+
+    line-height: 1.04;
+
+    letter-spacing: -1.8px;
+}
+
+
+.purpose-heading h2 span {
+    display: block;
+
+    color: #2F80ED;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.purpose-divider {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 38px auto 55px;
+
+    max-width: 800px;
+}
+
+
+.purpose-line {
+    flex: 1;
+
+    height: 1px;
+
+    background: #BFD6EE;
+}
+
+
+.purpose-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 2px solid #2F80ED;
+
+    border-radius: 50%;
+
+    background: #F7FAFD;
+
+    color: #1769C2;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PURPOSE CONTENT
+   ========================================================= */
+
+.our-purpose-content {
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CONTENT ROW
+   ========================================================= */
+
+.purpose-content-row {
+    display: grid;
+
+    grid-template-columns: 105px 1fr;
+
+    align-items: center;
+
+    gap: 38px;
+
+    padding: 32px 0;
+
+    border-bottom: 1px solid #D8E5F2;
+}
+
+
+.purpose-content-row:first-child {
+    border-top: 1px solid #D8E5F2;
+}
+
+
+/* =========================================================
+   ICON BOX
+   ========================================================= */
+
+.purpose-icon-box {
+    width: 72px;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #E8F2FD;
+
+    color: #1769C2;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    box-shadow:
+        inset 0 0 0 1px #D4E6F8;
+}
+
+
+.purpose-icon-box span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CONTENT TEXT
+   ========================================================= */
+
+.purpose-text {
+    max-width: 850px;
+}
+
+
+.purpose-text p {
+    margin: 0;
+
+    color: #4F6380;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+   ========================================================= */
+
+.purpose-content-row {
+    transition:
+        transform 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+
+.purpose-content-row:hover {
+    padding-left: 8px;
+}
+
+
+.purpose-content-row:hover
+.purpose-icon-box {
+    background: #DDEDFD;
+
+    transform: translateY(-2px);
+}
+
+
+.purpose-icon-box {
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   SUBTLE BACKGROUND DECORATION
+   ========================================================= */
+
+.our-purpose-section::before {
+    content: "";
+
+    position: absolute;
+
+    top: 70px;
+
+    left: -100px;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: #EAF4FE;
+
+    opacity: 0.65;
+
+    pointer-events: none;
+}
+
+
+.our-purpose-section::after {
+    content: "";
+
+    position: absolute;
+
+    right: -90px;
+
+    bottom: 40px;
+
+    width: 230px;
+
+    height: 230px;
+
+    background-image:
+        radial-gradient(
+            #BFD9F3 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 14px 14px;
+
+    opacity: 0.6;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET — OUR PURPOSE
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .our-purpose-section {
+        padding: 85px 0 80px;
+    }
+
+
+    .our-purpose-container {
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .purpose-heading h2 {
+        font-size: 48px;
+    }
+
+
+    .purpose-divider {
+        margin-top: 32px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .purpose-content-row {
+        grid-template-columns:
+            85px
+            1fr;
+
+        gap: 25px;
+
+        padding: 28px 0;
+    }
+
+
+    .purpose-icon-box {
+        width: 64px;
+
+        height: 64px;
+
+        font-size: 30px;
+    }
+
+
+    .purpose-text p {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — OUR PURPOSE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .our-purpose-section {
+        padding: 70px 0 65px;
+    }
+
+
+    .our-purpose-container {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .our-purpose-header .section-label {
+        margin-bottom: 18px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .purpose-heading {
+        gap: 5px;
+    }
+
+
+    .purpose-heading h2 {
+        font-size: 35px;
+
+        line-height: 1.08;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .purpose-divider {
+        gap: 12px;
+
+        margin:
+            28px auto
+            35px;
+    }
+
+
+    .purpose-icon {
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+
+    .purpose-content-row {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        padding: 27px 0;
+    }
+
+
+    .purpose-content-row:first-child {
+        border-top: 1px solid #D8E5F2;
+    }
+
+
+    .purpose-icon-box {
+        width: 56px;
+
+        height: 56px;
+
+        font-size: 26px;
+    }
+
+
+    .purpose-text p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .purpose-content-row:hover {
+        padding-left: 0;
+    }
+
+
+    .our-purpose-section::before {
+        width: 170px;
+
+        height: 170px;
+
+        left: -90px;
+
+        top: 40px;
+    }
+
+
+    .our-purpose-section::after {
+        width: 140px;
+
+        height: 140px;
+
+        right: -65px;
+
+        bottom: 25px;
+
+        background-size: 11px 11px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .our-purpose-section {
+        padding: 55px 0;
+    }
+
+
+    .our-purpose-container {
+        padding-left: 16px;
+
+        padding-right: 16px;
+    }
+
+
+    .purpose-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .purpose-text p {
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+
+    .purpose-icon-box {
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 24px;
+    }
+}

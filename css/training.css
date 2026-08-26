@@ -1,0 +1,1298 @@
+/* =========================================================
+   STUDENT & FRESHER PRACTICAL TRAINING
+   training.css
+
+   Body-only styles
+   Header / Footer:
+   global.css + home.css
+========================================================= */
+
+
+/* =========================================================
+   01. TRAINING VARIABLES
+========================================================= */
+
+:root {
+    --training-primary: #123B70;
+    --training-secondary: #1769C2;
+    --training-accent: #2F80ED;
+
+    --training-background: #F7FAFD;
+    --training-surface: #FFFFFF;
+
+    --training-text: #172B4D;
+    --training-muted: #5B6B82;
+
+    --training-border: #D8E5F2;
+
+    --training-green: #32C48D;
+
+    --training-radius: 14px;
+    --training-radius-large: 20px;
+
+    --training-shadow:
+        0 10px 30px rgba(18, 59, 112, 0.07);
+
+    --training-shadow-hover:
+        0 16px 40px rgba(18, 59, 112, 0.12);
+}
+
+
+/* =========================================================
+   02. COMMON SECTION
+========================================================= */
+
+.training-hero,
+.training-intro,
+.training-learning,
+.training-exposure,
+.training-eligibility,
+.training-outcomes {
+    width: 100%;
+}
+
+.training-intro,
+.training-learning,
+.training-exposure,
+.training-eligibility,
+.training-outcomes {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+/* =========================================================
+   03. SECTION LABEL
+========================================================= */
+
+.training-section-label {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    color: var(--training-secondary);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   04. SECTION HEADER
+========================================================= */
+
+.training-section-header {
+    max-width: 760px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.training-section-title {
+    margin: 0;
+
+    color: var(--training-primary);
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    font-weight: 800;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+.training-section-title span {
+    display: block;
+
+    color: var(--training-accent);
+}
+
+.training-section-description {
+    max-width: 680px;
+
+    margin: 20px auto 0;
+
+    color: var(--training-muted);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   05. HERO
+========================================================= */
+
+.training-hero {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7FAFD 0%,
+            #EEF6FC 55%,
+            #E8F2FB 100%
+        );
+}
+
+.training-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -150px;
+    top: -130px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(47, 128, 237, 0.12);
+}
+
+.training-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: -150px;
+    bottom: -170px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(50, 196, 141, 0.12);
+}
+
+.training-hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+}
+
+.training-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.training-hero .training-section-label {
+    margin-bottom: 20px;
+}
+
+.training-hero-title {
+    margin: 0;
+
+    color: var(--training-primary);
+
+    font-size: clamp(42px, 6vw, 72px);
+
+    font-weight: 850;
+
+    line-height: 1.03;
+
+    letter-spacing: -2.5px;
+}
+
+.training-hero-title span {
+    display: block;
+
+    color: var(--training-accent);
+}
+
+.training-hero-description {
+    max-width: 720px;
+
+    margin: 26px auto 0;
+
+    color: var(--training-muted);
+
+    font-size: 18px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   06. HERO ACTIONS
+========================================================= */
+
+.training-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 34px;
+}
+
+.training-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.training-btn:hover {
+    transform: translateY(-2px);
+}
+
+.training-btn-primary {
+    color: #FFFFFF;
+
+    background: var(--training-accent);
+
+    box-shadow:
+        0 8px 20px rgba(47, 128, 237, 0.2);
+}
+
+.training-btn-primary:hover {
+    background: var(--training-secondary);
+
+    box-shadow:
+        0 12px 25px rgba(47, 128, 237, 0.25);
+}
+
+.training-btn-secondary {
+    color: var(--training-primary);
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--training-border);
+}
+
+.training-btn-secondary:hover {
+    border-color: var(--training-secondary);
+    color: var(--training-secondary);
+}
+
+
+/* =========================================================
+   07. HERO POINTS
+========================================================= */
+
+.training-hero-points {
+    display: flex;
+
+    align-items: center;
+ justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 24px;
+
+    margin-top: 34px;
+}
+
+.training-hero-point {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--training-text);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.training-point-icon {
+    width: 22px;
+    height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    background: var(--training-secondary);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.training-point-icon.blue {
+    background: var(--training-accent);
+}
+
+.training-point-icon.green {
+    background: var(--training-green);
+}
+
+
+/* =========================================================
+   08. INTRO CARDS
+========================================================= */
+
+.training-intro {
+    background: var(--training-surface);
+}
+
+.training-intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.training-info-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: var(--training-background);
+
+    border: 1px solid var(--training-border);
+
+    border-radius: var(--training-radius);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.training-info-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(47, 128, 237, 0.35);
+
+    box-shadow: var(--training-shadow-hover);
+}
+
+.training-card-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    color: #FFFFFF;
+
+    background: var(--training-primary);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.training-info-card:nth-child(2)
+.training-card-number {
+    background: var(--training-accent);
+}
+
+.training-info-card:nth-child(3)
+.training-card-number {
+    background: var(--training-green);
+}
+
+.training-info-card h3 {
+    margin: 0;
+
+    color: var(--training-primary);
+
+    font-size: 20px;
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.training-info-card p {
+    margin: 14px 0 0;
+
+    color: var(--training-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   09. LEARNING SECTION
+========================================================= */
+
+.training-learning {
+    background: var(--training-background);
+}
+
+.training-learning-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.training-learning-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 28px;
+
+    background: var(--training-surface);
+
+    border: 1px solid var(--training-border);
+
+    border-radius: var(--training-radius);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.training-learning-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--training-shadow);
+}
+
+.training-learning-icon {
+    flex: 0 0 46px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: #FFFFFF;
+
+    background: var(--training-primary);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.training-learning-icon.blue {
+    background: var(--training-accent);
+}
+
+.training-learning-icon.green {
+    background: var(--training-green);
+}
+
+.training-learning-card h3 {
+    margin: 2px 0 0;
+
+    color: var(--training-primary);
+
+    font-size: 17px;
+    font-weight: 800;
+
+    line-height: 1.35;
+}
+
+.training-learning-card p {
+    margin: 8px 0 0;
+
+    color: var(--training-muted);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   10. PRACTICAL EXPOSURE
+========================================================= */
+
+.training-exposure {
+    background: var(--training-surface);
+}
+
+.training-exposure-layout {
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        0.95fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.training-exposure-content {
+    max-width: 620px;
+}
+
+.training-exposure-content
+.training-section-title {
+    text-align: left;
+}
+
+.training-exposure-description {
+    margin: 22px 0 0;
+
+    color: var(--training-muted);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+.training-exposure-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 28px;
+}
+
+.training-exposure-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--training-text);
+
+    font-size: 14px;
+}
+
+.training-exposure-item span {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 23px;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    background: var(--training-green);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   11. PROCESS PANEL
+========================================================= */
+
+.training-process-panel {
+    padding: 36px;
+
+    background: var(--training-primary);
+
+    border-radius: var(--training-radius-large);
+
+    box-shadow:
+        0 18px 45px rgba(18, 59, 112, 0.16);
+}
+
+.training-process-label {
+    display: block;
+
+    margin-bottom: 28px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.training-process-step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.training-process-step > span {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 42px;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.training-process-step strong {
+    display: block;
+
+    color: #FFFFFF;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.training-process-step small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.training-process-line {
+    width: 1px;
+    height: 25px;
+
+    margin: 5px 0 5px 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   12. ELIGIBILITY
+========================================================= */
+
+.training-eligibility {
+    background: var(--training-background);
+}
+
+.training-eligibility-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.training-eligibility-card {
+    padding: 28px 24px;
+
+    background: var(--training-surface);
+
+    border: 1px solid var(--training-border);
+
+    border-radius: var(--training-radius);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.training-eligibility-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--training-shadow);
+}
+
+.training-eligibility-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+
+    color: #FFFFFF;
+
+    background: var(--training-primary);
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.training-eligibility-icon.blue {
+    background: var(--training-accent);
+}
+
+.training-eligibility-icon.green {
+    background: var(--training-green);
+}
+
+.training-eligibility-card h3 {
+    margin: 0;
+
+    color: var(--training-primary);
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.4;
+}
+
+.training-eligibility-card p {
+    margin: 10px 0 0;
+
+    color: var(--training-muted);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   13. OUTCOMES
+========================================================= */
+
+.training-outcomes {
+    background: var(--training-surface);
+}
+
+.training-outcomes-layout {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr
+        1.2fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.training-outcomes-heading
+.training-section-title {
+    text-align: left;
+}
+
+.training-outcomes-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+.training-outcome-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid var(--training-border);
+}
+
+.training-outcome-item:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+.training-outcome-item > span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 28px;
+
+    margin-top: 2px;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    background: var(--training-green);
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.training-outcome-item strong {
+    display: block;
+
+    color: var(--training-primary);
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.4;
+}
+
+.training-outcome-item p {
+    margin: 6px 0 0;
+
+    color: var(--training-muted);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   14. CTA
+========================================================= */
+
+.training-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 90px 0;
+
+    background: linear-gradient(
+    135deg,
+    #123B70 0%,
+    #1769C2 100%
+);
+
+    text-align: center;
+}
+
+.training-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    right: -180px;
+    top: -220px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.training-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    left: -140px;
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(50, 196, 141, 0.12);
+}
+
+.training-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.training-cta
+.training-section-label {
+    color: var(--training-green);
+}
+
+.training-cta h2 {
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: clamp(32px, 4.5vw, 52px);
+
+    font-weight: 800;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+.training-cta h2 span {
+    display: block;
+
+    color: #FFFFFF;
+}
+
+.training-cta p {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+.training-cta-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 32px;
+}
+
+.training-btn-white {
+    color: var(--training-primary);
+
+    background: #FFFFFF;
+}
+
+.training-btn-white:hover {
+    color: var(--training-secondary);
+
+    background: #FFFFFF;
+}
+
+.training-btn-whatsapp {
+    color: #FFFFFF;
+
+    background: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.training-btn-whatsapp:hover {
+    border-color: var(--training-green);
+
+    color: #FFFFFF;
+
+    background: rgba(50, 196, 141, 0.12);
+}
+
+
+/* =========================================================
+   15. RESPONSIVE — 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .training-eligibility-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .training-exposure-layout {
+        gap: 45px;
+    }
+
+    .training-outcomes-layout {
+        gap: 55px;
+    }
+
+}
+
+
+/* =========================================================
+   16. RESPONSIVE — 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .training-intro,
+    .training-learning,
+    .training-exposure,
+    .training-eligibility,
+    .training-outcomes {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .training-hero {
+        min-height: 580px;
+    }
+
+    .training-hero-title {
+        font-size: clamp(40px, 7vw, 60px);
+    }
+
+    .training-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-exposure-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .training-exposure-content {
+        max-width: 760px;
+    }
+
+    .training-outcomes-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .training-outcomes-heading {
+        max-width: 700px;
+    }
+
+}
+
+
+/* =========================================================
+   17. RESPONSIVE — 640px
+========================================================= */
+
+@media (max-width: 640px) {
+
+    .training-intro,
+    .training-learning,
+    .training-exposure,
+    .training-eligibility,
+    .training-outcomes {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .training-hero {
+        min-height: auto;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .training-hero-title {
+        font-size: 42px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .training-hero-description {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .training-hero-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+
+        max-width: 320px;
+    }
+
+    .training-btn {
+        width: 100%;
+    }
+
+    .training-hero-points {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .training-section-header {
+        margin-bottom: 38px;
+    }
+
+    .training-section-title {
+        font-size: 34px;
+
+        letter-spacing: -0.7px;
+    }
+
+    .training-section-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .training-info-card {
+        padding: 26px;
+    }
+
+    .training-learning-card {
+        padding: 24px;
+
+        gap: 15px;
+    }
+
+    .training-process-panel {
+        padding: 28px 24px;
+    }
+
+    .training-eligibility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-outcomes-layout {
+        gap: 35px;
+    }
+
+    .training-cta {
+        padding: 70px 0;
+    }
+
+    .training-cta h2 {
+        font-size: 34px;
+    }
+
+    .training-cta p {
+        font-size: 14px;
+    }
+
+    .training-cta-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+
+        max-width: 320px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* =========================================================
+   18. RESPONSIVE — 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .training-hero {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .training-hero-title {
+        font-size: 36px;
+    }
+
+    .training-section-title {
+        font-size: 30px;
+    }
+
+    .training-learning-card {
+        flex-direction: column;
+    }
+
+    .training-process-step {
+        gap: 13px;
+    }
+
+    .training-process-step > span {
+        width: 38px;
+        height: 38px;
+
+        flex-basis: 38px;
+    }
+
+    .training-process-line {
+        margin-left: 18px;
+    }
+
+}

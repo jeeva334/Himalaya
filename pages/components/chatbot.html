@@ -1,0 +1,178 @@
+<!-- =====================================================
+     HIMALAYA MEDICAL SERVICES
+     REUSABLE CHATBOT COMPONENT
+====================================================== -->
+
+<div class="chatbot">
+
+    <!-- =================================================
+         CHATBOT WINDOW
+    ================================================== -->
+
+    <div
+        class="chatbot-window"
+        id="chatbotWindow"
+        aria-hidden="true"
+    >
+
+        <!-- CHATBOT HEADER -->
+
+        <div class="chatbot-header">
+
+            <div class="chatbot-header-info">
+
+                <div class="chatbot-avatar">
+                    💬
+                </div>
+
+                <div class="chatbot-title">
+
+                    <strong>
+                        Himalaya Medical Services
+                    </strong>
+
+                    <span>
+                        How can we help you?
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="chatbot-close"
+                id="chatbotClose"
+                aria-label="Close chatbot"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             CHATBOT BODY
+        ================================================== -->
+
+        <div class="chatbot-body">
+
+            <!-- GREETING -->
+
+            <div class="chatbot-message">
+
+                <div class="chatbot-message-avatar">
+                    💬
+                </div>
+
+                <div class="chatbot-message-content">
+
+                    <p>
+                        Hello! 👋
+                    </p>
+
+                    <p>
+                        How can we help you today?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 WHATSAPP OPTION
+            ================================================== -->
+
+           <button
+    type="button"
+    class="chatbot-option whatsapp-option"
+    id="whatsappOption"
+    onclick="window.open('https://wa.me/917406127707', '_blank')"
+>
+
+    <span class="chatbot-option-icon">
+        💬
+    </span>
+
+    <span class="chatbot-option-content">
+
+        <strong>
+            Chat with Us on WhatsApp
+        </strong>
+
+        <small>
+            Talk directly with our team
+        </small>
+
+    </span>
+
+    <span class="chatbot-option-arrow">
+        →
+    </span>
+
+</button>
+
+            <!-- =================================================
+                 SERVICE ENQUIRY OPTION
+            ================================================== -->
+
+            <button
+                type="button"
+                class="chatbot-option enquiry-option"
+                id="serviceEnquiryOption"
+            >
+
+                <span class="chatbot-option-icon">
+                    📋
+                </span>
+
+
+                <span class="chatbot-option-content">
+
+                    <strong>
+                        I'm Interested in a Service
+                    </strong>
+
+                    <small>
+                        Send us your requirements
+                    </small>
+
+                </span>
+
+
+                <span class="chatbot-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FLOATING CHAT BUTTON
+    ================================================== -->
+
+    <button
+        type="button"
+        class="chatbot-toggle"
+        id="chatbotToggle"
+        aria-label="Open chat"
+        aria-expanded="false"
+    >
+
+        <span class="chatbot-icon">
+            💬
+        </span>
+
+        <span class="chatbot-close-icon">
+            ×
+        </span>
+
+    </button>
+
+</div>

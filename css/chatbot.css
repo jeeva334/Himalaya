@@ -1,0 +1,729 @@
+/* =========================================================
+   HIMALAYA MEDICAL SERVICES
+   REUSABLE CHATBOT
+   ========================================================= */
+
+
+/* =========================================================
+   1. CHATBOT MAIN CONTAINER
+   ========================================================= */
+
+.chatbot {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    z-index: 99999;
+
+}
+
+
+/* =========================================================
+   2. FLOATING CHAT BUTTON
+   ========================================================= */
+
+.chatbot-toggle {
+
+    position: relative;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2F80ED;
+
+    color: #FFFFFF;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(18, 59, 112, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* =========================================================
+   3. BUTTON HOVER
+   ========================================================= */
+
+.chatbot-toggle:hover {
+
+    transform: translateY(-4px);
+
+    background: #1769C2;
+
+    box-shadow:
+        0 15px 35px rgba(18, 59, 112, 0.30);
+
+}
+
+
+/* =========================================================
+   4. CHAT ICON
+   ========================================================= */
+
+.chatbot-icon {
+
+    display: block;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================================
+   5. CLOSE ICON
+   ========================================================= */
+
+.chatbot-close-icon {
+
+    display: none;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+}
+
+
+/* When chatbot is open */
+
+.chatbot.active
+.chatbot-icon {
+
+    display: none;
+
+}
+
+
+.chatbot.active
+.chatbot-close-icon {
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   6. CHATBOT WINDOW
+   ========================================================= */
+
+.chatbot-window {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 75px;
+
+    width: 370px;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(18, 59, 112, 0.18);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(15px)
+        scale(0.96);
+
+    transform-origin: bottom right;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+/* =========================================================
+   7. OPEN CHATBOT
+   ========================================================= */
+
+.chatbot.active
+.chatbot-window {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =========================================================
+   8. CHATBOT HEADER
+   ========================================================= */
+
+.chatbot-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123B70,
+            #1769C2
+        );
+
+    color: #FFFFFF;
+
+}
+
+
+/* =========================================================
+   9. HEADER INFORMATION
+   ========================================================= */
+
+.chatbot-header-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+}
+
+
+.chatbot-avatar {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    font-size: 19px;
+
+}
+
+
+.chatbot-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.chatbot-title strong {
+
+    color: #FFFFFF;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.chatbot-title span {
+
+    margin-top: 3px;
+
+    color:
+        rgba(255, 255, 255, 0.70);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   10. CLOSE BUTTON
+   ========================================================= */
+
+.chatbot-close {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    color: #FFFFFF;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease;
+
+}
+
+
+.chatbot-close:hover {
+
+    background:
+        rgba(255, 255, 255, 0.22);
+
+}
+
+
+/* =========================================================
+   11. CHATBOT BODY
+   ========================================================= */
+
+.chatbot-body {
+
+    padding: 20px;
+
+    background: #FFFFFF;
+
+}
+
+
+/* =========================================================
+   12. CHATBOT MESSAGE
+   ========================================================= */
+
+.chatbot-message {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.chatbot-message-avatar {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #EAF3FF;
+
+    font-size: 13px;
+
+}
+
+
+.chatbot-message-content {
+
+    padding: 10px 13px;
+
+    border-radius:
+        4px
+        12px
+        12px
+        12px;
+
+    background: #F7FAFD;
+
+}
+
+
+.chatbot-message-content p {
+
+    margin: 0;
+
+    color: #172B4D;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+.chatbot-message-content p + p {
+
+    margin-top: 2px;
+
+}
+
+
+/* =========================================================
+   13. CHATBOT OPTIONS
+   ========================================================= */
+
+.chatbot-option {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #D8E5F2;
+
+    border-radius: 12px;
+
+    background: #FFFFFF;
+
+    color: #172B4D;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+/* =========================================================
+   14. OPTION HOVER
+   ========================================================= */
+
+.chatbot-option:hover {
+
+    transform: translateX(-3px);
+
+    border-color: #2F80ED;
+
+    background: #F7FAFD;
+
+    box-shadow:
+        0 5px 15px
+        rgba(18, 59, 112, 0.06);
+
+}
+
+
+/* =========================================================
+   15. OPTION ICON
+   ========================================================= */
+
+.chatbot-option-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #EAF3FF;
+
+    font-size: 18px;
+
+}
+
+
+.whatsapp-option
+.chatbot-option-icon {
+
+    background:
+        rgba(50, 196, 141, 0.12);
+
+}
+
+
+/* =========================================================
+   16. OPTION CONTENT
+   ========================================================= */
+
+.chatbot-option-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+
+.chatbot-option-content strong {
+
+    color: #123B70;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+}
+
+
+.chatbot-option-content small {
+
+    margin-top: 4px;
+
+    color: #5B6B82;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   17. OPTION ARROW
+   ========================================================= */
+
+.chatbot-option-arrow {
+
+    color: #2F80ED;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   18. BUTTON PULSE
+   ========================================================= */
+
+.chatbot-toggle::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 2px solid
+        rgba(47, 128, 237, 0.35);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    animation:
+        chatbotPulse 2s infinite;
+
+}
+
+
+@keyframes chatbotPulse {
+
+    0% {
+
+        transform: scale(1);
+
+        opacity: 0.7;
+
+    }
+
+    70% {
+
+        transform: scale(1.35);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        transform: scale(1.35);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   19. MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .chatbot {
+
+        right: 18px;
+
+        bottom: 18px;
+
+    }
+
+
+    .chatbot-toggle {
+
+        width: 56px;
+
+        height: 56px;
+
+        font-size: 23px;
+
+    }
+
+
+    .chatbot-toggle::after {
+
+        width: 56px;
+
+        height: 56px;
+
+    }
+
+
+    .chatbot-window {
+
+        right: 0;
+
+        bottom: 68px;
+
+        width:
+            calc(100vw - 36px);
+
+        max-width: 370px;
+
+    }
+
+}
+
+
+/* =========================================================
+   20. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .chatbot {
+
+        right: 14px;
+
+        bottom: 14px;
+
+    }
+
+
+    .chatbot-window {
+
+        width:
+            calc(100vw - 28px);
+
+    }
+
+}
+
+
+/* =========================================================
+   21. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .chatbot-toggle,
+    .chatbot-window,
+    .chatbot-option {
+
+        transition: none;
+
+    }
+
+
+    .chatbot-toggle::after {
+
+        animation: none;
+
+    }
+
+}
