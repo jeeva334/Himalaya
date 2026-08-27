@@ -2105,19 +2105,3 @@ body {
 }
 
 
-/* iPhone Safari specific viewport protection */
-@supports (-webkit-touch-callout: none) {
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    main,
-    section,
-    header,
-    footer {
-        max-width: 100vw;
-    }
-}
