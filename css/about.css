@@ -668,10 +668,10 @@
 
     color: #123B70;
 
-    font-size: clamp(
+     font-size: clamp(
         38px,
         4vw,
-        50px
+        46px
     );
 
     font-weight: 800;
@@ -1140,7 +1140,7 @@
     font-size: clamp(
         40px,
         4.5vw,
-        58px
+        48px
     );
 
     font-weight: 800;
@@ -1760,12 +1760,11 @@
 
     color: #123B70;
 
-    font-size: clamp(
-        42px,
-        5vw,
-        62px
+     font-size: clamp(
+        40px,
+        4.5vw,
+        48px
     );
-
     font-weight: 800;
 
     line-height: 1.04;
@@ -2522,7 +2521,7 @@
     font-size: clamp(
         40px,
         4.5vw,
-        58px
+        48px
     );
 
     font-weight: 800;
@@ -4121,10 +4120,10 @@
 
     color: #123B70;
 
-    font-size: clamp(
-        42px,
-        5vw,
-        64px
+   font-size: clamp(
+        40px,
+        4.5vw,
+        48px
     );
 
     font-weight: 800;
