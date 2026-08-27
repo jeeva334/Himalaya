@@ -4595,3 +4595,31 @@
         font-size: 24px;
     }
 }
+
+@media (max-width: 640px) {
+
+    /* 3 HIGHLIGHTS */
+    .about-hero-highlights {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        width: 100%;
+    }
+
+    /* Hide the bullet separators */
+    .about-hero-highlights span:nth-child(even) {
+        display: none;
+    }
+
+    /* BUTTON */
+    .about-hero-actions {
+        width: 100%;
+    }
+
+    .about-hero-actions .btn {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
