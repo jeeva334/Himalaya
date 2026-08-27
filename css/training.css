@@ -1173,13 +1173,13 @@
         line-height: 1.7;
     }
 
-    .training-hero-actions {
+    /* .training-hero-actions {
         align-items: stretch;
 
         flex-direction: column;
 
         max-width: 320px;
-    }
+    } */
 
     .training-btn {
         width: 100%;
