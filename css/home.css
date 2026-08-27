@@ -3196,12 +3196,11 @@
         box-sizing: border-box;
     }
 
-   .hero-trust-panel {
-    left: 50%;
-    width: 100%;
-    max-width: 100%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
+    .hero-trust-panel {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        box-sizing: border-box;
+    }
 }
-}
-
