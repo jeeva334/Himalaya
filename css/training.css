@@ -1299,25 +1299,27 @@
 
 @media (max-width: 640px) {
 
-    /* HERO BUTTONS */
-   .training-hero-actions {
+   /* HERO BUTTONS - MOBILE */
+    .training-hero-actions {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 12px;
+        margin-top: 28px;
         padding: 0 22px;
         box-sizing: border-box;
     }
 
     .training-hero-actions .training-btn {
         width: 100%;
-        max-width: 360px;
-        
-        display: flex;
-        flex-direction: column;
+        max-width: 320px;
+        min-height: 50px;
+        display: inline-flex;
         align-items: center;
-        gap: 12px;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     /* HERO POINTS */
