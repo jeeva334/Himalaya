@@ -4386,37 +4386,6 @@
 
 @media (max-width: 992px) {
     
-    .our-purpose-section {
-        padding: 55px 0;
-    }
-
-
-    .our-purpose-container {
-        padding-left: 16px;
-
-        padding-right: 16px;
-    }
-
-
-    .purpose-heading h2 {
-        font-size: 30px;
-    }
-
-
-    .purpose-text p {
-        font-size: 13px;
-
-        line-height: 1.65;
-    }
-
-
-    .purpose-icon-box {
-        width: 52px;
-
-        height: 52px;
-
-        font-size: 24px;
-    }
 
     .our-purpose-section {
         padding: 85px 0 80px;
@@ -4634,7 +4603,7 @@
     .about-hero-highlights {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 4px;
         width: 100%;
     }
@@ -4653,5 +4622,50 @@
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 641px) and (max-width: 992px) {
+
+    .about-hero-highlights {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .about-hero-actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .who-we-are-visual {
+        margin-left: 0;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .who-we-are-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 360px;
+    }
+
+    .who-we-are-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
