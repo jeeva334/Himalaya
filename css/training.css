@@ -1314,6 +1314,7 @@
     .training-hero-actions .training-btn {
         width: 100%;
         max-width: 100%;
+        align-item: center;
         box-sizing: border-box;
         justify-content: center;
     }
