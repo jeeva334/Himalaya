@@ -1296,3 +1296,40 @@
     }
 
 }
+
+/* =========================================================
+   TRAINING HERO — MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    /* TWO BUTTONS */
+    .training-hero-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .training-hero-actions .training-btn {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    /* THREE HERO POINTS */
+    .training-hero-points {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .training-hero-point {
+        width: 100%;
+        justify-content: center;
+    }
+}
