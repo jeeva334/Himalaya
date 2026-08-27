@@ -2055,3 +2055,69 @@ overflow-y: auto;
         word-break: normal;
     }
 }
+
+
+/* =========================================================
+   IPHONE / MOBILE HORIZONTAL OVERFLOW FIX
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+
+    .site-header,
+    .navbar,
+    main,
+    section,
+    footer {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar {
+        overflow: visible;
+    }
+
+    .container {
+        width: calc(100% - 28px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+}
+
+
+/* iPhone Safari specific viewport protection */
+@supports (-webkit-touch-callout: none) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main,
+    section,
+    header,
+    footer {
+        max-width: 100vw;
+    }
+}
