@@ -4646,25 +4646,82 @@
         justify-content: center;
     }
 }
+/* =========================================================
+   WHO WE ARE — MOBILE RESPONSIVE FIX
+   ========================================================= */
 
 @media (max-width: 640px) {
 
+    .who-we-are-section {
+        padding: 65px 0;
+        overflow: hidden;
+    }
+
+    .who-we-are-container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* CONTENT FIRST */
+    .who-we-are-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 22px;
+        position: relative;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+
+    .who-we-are-title {
+        font-size: 34px;
+        line-height: 1.08;
+        letter-spacing: -0.8px;
+        margin-bottom: 25px;
+    }
+
+    /* IMAGE BELOW CONTENT */
     .who-we-are-visual {
-        margin-left: 0;
+        position: relative;
+        z-index: 1;
         width: 100%;
         min-height: auto;
+        margin-left: 0;
+        display: block;
     }
 
     .who-we-are-image-wrapper {
+        position: relative;
         width: 100%;
         max-width: 100%;
         height: 360px;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
     .who-we-are-image {
         width: 100%;
         height: 100%;
+        display: block;
         object-fit: cover;
         object-position: center;
+    }
+
+    /* Keep decorations inside the mobile area */
+    .who-decoration-top {
+        right: -15px;
+        top: 15px;
+    }
+
+    .who-decoration-bottom {
+        left: -15px;
+        bottom: 15px;
+    }
+
+    .who-dots {
+        right: -20px;
+        bottom: -20px;
     }
 }
