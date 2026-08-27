@@ -1342,6 +1342,10 @@ textarea.form-control {
 
         right: 0;
 
+        max-height: calc(100vh - 72px);
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+
         padding: 15px 20px;
 
         background: var(--surface-color);
@@ -1360,6 +1364,8 @@ textarea.form-control {
             opacity var(--transition-normal),
             visibility var(--transition-normal),
             transform var(--transition-normal);
+
+        
 
     }
 

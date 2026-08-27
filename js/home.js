@@ -118,21 +118,43 @@ function initializeMobileNavigation() {
     // On mobile, the Services item has no hover, so tapping it
     // opens/closes the submenu instead of navigating away.
 
-    if (servicesItem && servicesLink) {
+   // Mobile Services behavior
+// First tap = open/close service list
+// Second tap = navigate to Services page
 
-        servicesLink.addEventListener("click", function (event) {
+if (servicesItem && servicesLink) {
 
-            if (window.innerWidth > 900) {
-                return;
-            }
+    servicesLink.addEventListener("click", function (event) {
 
+        if (window.innerWidth > 900) {
+
+            return;
+
+        }
+
+        var isServicesOpen =
+            servicesItem.classList.contains("mobile-open");
+
+        if (!isServicesOpen) {
+
+            // First tap: open service list
             event.preventDefault();
 
-            servicesItem.classList.toggle("mobile-open");
+            servicesItem.classList.add("mobile-open");
 
-        });
+        } else {
 
-    }
+            // Second tap: allow normal navigation
+            servicesItem.classList.remove("mobile-open");
+
+            // Do NOT use preventDefault()
+            // href="services.html" will work normally
+
+        }
+
+    });
+
+}
 
 
     // Reset mobile menu state if the viewport grows back to desktop.
