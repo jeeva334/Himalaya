@@ -161,7 +161,7 @@ if (servicesItem && servicesLink) {
 
     window.addEventListener("resize", function () {
 
-        if (window.innerWidth > 992) {
+        if (window.innerWidth > 900) {
             closeMobileNav();
         }
 
