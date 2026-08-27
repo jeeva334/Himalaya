@@ -2055,3 +2055,41 @@ overflow-y: auto;
         word-break: normal;
     }
 }
+/* =========================================================
+   MOBILE — PREVENT HORIZONTAL PAGE OVERFLOW
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    main,
+    section,
+    header,
+    footer {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -18,7 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/* =========================================================
+   iOS / MOBILE PAGE RESTORE
+   Reinitialize page when returning from external apps
+   such as WhatsApp.
+   ========================================================= */
 
+window.addEventListener("pageshow", function (event) {
+
+    if (event.persisted) {
+
+        initializeHeaderScrollState();
+        initializeMobileNavigation();
+        initializeHeroCarousel();
+
+    }
+
+});
 /* =========================================================
    2. HEADER SCROLL STATE
    Adds a subtle shadow to the sticky header once the page
