@@ -4385,6 +4385,38 @@
    ========================================================= */
 
 @media (max-width: 992px) {
+    
+    .our-purpose-section {
+        padding: 55px 0;
+    }
+
+
+    .our-purpose-container {
+        padding-left: 16px;
+
+        padding-right: 16px;
+    }
+
+
+    .purpose-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .purpose-text p {
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+
+    .purpose-icon-box {
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 24px;
+    }
 
     .our-purpose-section {
         padding: 85px 0 80px;
