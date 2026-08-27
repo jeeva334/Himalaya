@@ -3137,18 +3137,22 @@
 }
 
 /* =========================================================
-   iOS SAFARI — HORIZONTAL OVERFLOW FIX
+   MOBILE — HORIZONTAL OVERFLOW FIX
    ========================================================= */
 
-@supports (-webkit-touch-callout: none) {
+@media (max-width: 640px) {
 
     html,
     body {
         width: 100%;
         max-width: 100%;
-        margin: 0;
-        padding: 0;
         overflow-x: hidden;
+    }
+
+    .site-header {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .hero-carousel {
@@ -3158,29 +3162,70 @@
     }
 
     .hero-carousel-container {
-        width: calc(100% - 28px);
-        max-width: calc(100% - 28px);
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
 
     .hero-carousel-content {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+        box-sizing: border-box;
     }
 
     .hero-carousel-title,
     .hero-carousel-subtitle,
     .hero-carousel-description {
         max-width: 100%;
+        min-width: 0;
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
 
-    .hero-carousel-label {
+    .hero-carousel-actions {
+        width: 100%;
         max-width: 100%;
-        overflow: hidden;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-btn {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+   .hero-trust-panel {
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+}
+
+/* =========================================================
+   MOBILE — FINAL HERO POSITION FIX
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .hero-carousel-container {
+        width: calc(100% - 28px);
+        max-width: calc(100% - 28px);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-carousel-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .hero-carousel-actions {
@@ -3189,12 +3234,9 @@
     }
 
     .hero-btn {
+        width: 100%;
         max-width: 100%;
         box-sizing: border-box;
     }
 
-    .hero-trust-panel {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
 }
