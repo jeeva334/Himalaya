@@ -3205,38 +3205,3 @@
 }
 }
 
-/* =========================================================
-   MOBILE — FINAL HERO POSITION FIX
-   ========================================================= */
-
-@media (max-width: 640px) {
-
-    .hero-carousel-container {
-        width: calc(100% - 28px);
-        max-width: calc(100% - 28px);
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
-        padding-right: 0;
-        box-sizing: border-box;
-    }
-
-    .hero-carousel-content {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .hero-carousel-actions {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .hero-btn {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-}
