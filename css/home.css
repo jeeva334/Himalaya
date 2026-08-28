@@ -35,7 +35,7 @@ main {
 
 
 /* =========================================================
-   உங்கள் existing HOME CSS
+existing HOME CSS
    ========================================================= */
 
 
@@ -3162,3 +3162,80 @@ main {
     }
 }
 
+/* =========================================================
+   iPHONE / SAFARI — HOME HORIZONTAL OVERFLOW FIX
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .hero-carousel {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .hero-carousel-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .hero-carousel-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-carousel-label {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .hero-carousel-title,
+    .hero-carousel-subtitle,
+    .hero-carousel-description {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .hero-carousel-actions {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-btn,
+    .hero-btn-primary,
+    .hero-btn-secondary {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-trust-panel {
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        box-sizing: border-box;
+    }
+
+    .hero-carousel-arrow {
+        max-width: 42px;
+    }
+}
