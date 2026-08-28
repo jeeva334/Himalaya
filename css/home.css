@@ -3239,3 +3239,30 @@ existing HOME CSS
         max-width: 42px;
     }
 }
+
+/* =========================================================
+   HOME PAGE — MOBILE OVERFLOW FIX
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* Prevent Services mega menu from creating page width */
+    .services-mega-menu {
+        max-width: calc(100vw - 20px) !important;
+        width: calc(100vw - 20px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .services-menu-inner,
+    .services-menu-footer {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Keep hero images inside the viewport */
+    .hero-slide-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+    }
+}
