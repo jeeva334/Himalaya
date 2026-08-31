@@ -3257,3 +3257,56 @@ existing HOME CSS
         transform: none !important;
     }
 }
+
+
+/* =========================================================
+   FINAL MOBILE WIDTH FIX
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .about-preview {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-grid {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .about-experience-card {
+        right: 10px;
+        max-width: calc(100% - 20px);
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
