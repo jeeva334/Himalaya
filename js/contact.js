@@ -56,16 +56,16 @@ function initializeEnquiryForm() {
             document.getElementById("phone").value.trim();
 
         var email =
-            document.getElementById("email").value.trim();
+            document.getElementById("email").value.trim()||"null";
 
         var service =
-            document.getElementById("service").value;
+            document.getElementById("service").value||"null";
 
         var organization =
-            document.getElementById("organization").value.trim();
+            document.getElementById("organization").value.trim()||"null";
 
         var message =
-            document.getElementById("message").value.trim();
+            document.getElementById("message").value.trim()||"null";
 
 
         /* =================================================
