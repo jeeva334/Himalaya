@@ -72,7 +72,7 @@ function initializeEnquiryForm() {
            BASIC VALIDATION
            ================================================= */
 
-        if (!name || !phone || !email || !service || !message) {
+        if (!name || !phone ) {
 
             showFormStatus(
                 "Please fill in all required fields.",
